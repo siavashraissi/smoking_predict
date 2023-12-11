@@ -1,0 +1,26 @@
+Title: CS 167 HW 5 PART 2
+By: Siavash Raissi
+Date: April 28, 2023
+
+Description: A Python script that takes in a file of patients, their gene expressions, and their smoker status, and uses it to predict the smoker status of other patients with KNN Classifying.
+
+Getting Started:
+
+If importing as a module:
+- First parse the two sequences using:
+    x_train, y_train, x_test = patientParse()
+
+- Then, call a KNNClassifier class object, specifying the scoring scheme 
+  for the program with:
+    - NNk = KNNClassifier(k, x_train, y_train), where k is an integer for the k-vaslue, x_train is a 2D numpy array of size (number of samples, number of genes), and y_train is a numpy array with shape (number of samples, ).
+
+- To predict the smoker status for a set of patients, use:
+    y_pred = NNk.predict(x_test), where x_test is a 2D array of size (number of samples, number of genes) without smoker status. y_pred is a 1D array of all of the predicted smoker statuses for each index patient.
+
+- To return the accuracy of a read as a float, use:
+    acc = accuracy(y_true, y_pred), where y_true is a 1D numpy array of the known smoker statuses of the training data patients.
+
+
+- When these specifications are prepared, the program can be run using the 
+  command line argument: 
+    "python3 classifier.py"
