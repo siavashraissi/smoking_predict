@@ -19,7 +19,6 @@ If importing as a module:
 - To return the accuracy of a read as a float, use:
     acc = accuracy(y_true, y_pred), where y_true is a 1D numpy array of the known smoker statuses of the training data patients.
 
-
-- When these specifications are prepared, the program can be run using the 
-  command line argument: 
-    "python3 classifier.py"
+If running default:
+- The default program can be run using the 
+  command line argument: "python3 classifier.py"
